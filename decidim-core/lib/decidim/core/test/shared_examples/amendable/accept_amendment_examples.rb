@@ -22,6 +22,6 @@ shared_examples "accept amendment" do
     command.call
 
     expect(Decidim::EventsManager)
-      .to receive(:publish)
+    .to receive(:publish)
   end
 end
